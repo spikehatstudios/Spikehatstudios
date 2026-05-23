@@ -5,7 +5,8 @@
       "Bash(Select-Object -First 20)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "PowerShell(Get-ChildItem \"D:\\\\Data\\\\LEts\\\\New folder\\\\Spikehatstudios\\\\Image\\\\\" -File | Select-Object Name, @{Name=\"Size\";Expression={$_.Length}} | Format-Table -AutoSize)"
     ]
   }
 }
