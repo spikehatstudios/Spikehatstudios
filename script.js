@@ -40,3 +40,33 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
+
+// Fade up animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('section').forEach(section => {
+    section.classList.add('fade-out');
+    observer.observe(section);
+});
+
+// Gmail redirect for email link
+document.querySelectorAll('.email-link').forEach(emailLink => {
+    emailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = this.getAttribute('href').replace('mailto:', '');
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+        window.open(gmailUrl, '_blank');
+    });
+});
