@@ -3,146 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpikeHat Studios - Game Design & Animation</title>
-    <link rel="icon" type="image/png" href="Image/Header.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="SpikeHat Studios — a creative house building games, animation, and worlds worth playing.">
+    <title>SpikeHat Studios — Games, Animation, Worlds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Top marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+            <span class="marquee-item">THE STUDIO IS OPEN</span><span class="marquee-eye">◉</span>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="Image/Header.png" alt="SpikeHat Studios Logo" class="logo-img">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <video class="hero-video" autoplay muted loop>
-            <source src="Image/Trailer.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <img src="Image/SpikeHat_logo.png" alt="SpikeHat Studios Logo" class="hero-logo">
-            <h1 class="hero-title">Transform Your Vision Into Reality</h1>
-            <p class="hero-subtitle">Professional Game Design, Animation & Creative Solutions</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        SpikeHat Studios is a creative powerhouse specializing in game design, animation, and comprehensive visual solutions.
-                        With years of experience in the industry, we transform ideas into captivating digital experiences.
-                    </p>
-                    <p>
-                        Our team of talented designers, developers, and animators work collaboratively to deliver exceptional results
-                        that exceed expectations. We're passionate about pushing creative boundaries and bringing your vision to life.
-                    </p>
-                    <ul class="about-highlights">
-                        <li>✓ Expert Game Designers & Developers</li>
-                        <li>✓ Professional Animation Team</li>
-                        <li>✓ Creative Branding Solutions</li>
-                        <li>✓ Custom Graphic Design</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>🎮 Creative Excellence</span>
-                    </div>
-                </div>
+    <header class="nav">
+        <div class="nav-inner">
+            <nav class="nav-left" aria-label="Primary">
+                <a href="couch-clash.html">COUCH CLASH</a>
+                <a href="who-ordered-this.html">WHO ORDERED THIS?</a>
+                <span class="nav-divider" aria-hidden="true"></span>
+                <a href="#services">SERVICES</a>
+                <a href="#about">ABOUT</a>
+            </nav>
+            <a href="#top" class="nav-logo" aria-label="SpikeHat Studios home">
+                <img src="Image/SpikeHat_logo.png" alt="SpikeHat Studios">
+            </a>
+            <div class="nav-right">
+                <a href="#about" class="nav-cta">START A PROJECT</a>
+                <button class="nav-burger" aria-label="Open menu" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🎮</div>
-                    <h3>Game Development</h3>
-                    <p>Full-cycle game design and development for multiple platforms. From concept to launch, we handle every aspect of game creation.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h3>Animation & Motion Graphics</h3>
-                    <p>Stunning animations and motion graphics that bring your stories to life. 2D, 3D, and character animation expertise.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Graphic Design</h3>
-                    <p>Custom graphic design solutions tailored to your brand. Logos, UI/UX design, promotional materials, and more.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3>Branding</h3>
-                    <p>Comprehensive branding solutions that establish and strengthen your company's identity in the market.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🖼️</div>
-                    <h3>Visual Effects</h3>
-                    <p>High-quality visual effects for games, videos, and multimedia projects. Particle systems, simulations, and compositing.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Contractual Services</h3>
-                    <p>Flexible contractual arrangements for ongoing projects or specific deliverables. Tailored to your timeline and budget.</p>
-                </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="mobile-close" aria-label="Close menu" id="mobileClose">&times;</button>
+        <nav>
+            <a href="couch-clash.html">Couch Clash</a>
+            <a href="who-ordered-this.html">Who Ordered This?</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </nav>
+    </div>
+
+    <main id="top">
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-noise"></div>
+                <div class="hero-vignette"></div>
             </div>
-        </div>
-    </section>
+            <div class="hero-content">
+                <span class="hero-eyebrow">A CREATIVE STUDIO · EST. 2024</span>
+                <h1 class="hero-title">
+                    <span class="hero-kicker">WE MAKE THINGS THAT</span>
+                    <span class="hero-chrome">MOVE</span>
+                    <span class="hero-chrome">&amp; PLAY</span>
+                </h1>
+                <p class="hero-lede">We build games, animation, and identities for people who want to make something people remember. Pick a door.</p>
+                <a href="#work" class="btn-pill">ENTER THE STUDIO</a>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                <span>SCROLL</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <p>Have a project in mind? We'd love to hear from you. Get in touch with us today and let's create something amazing together.</p>
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <span class="detail-icon">📧</span>
-                            <p>Email us at:<br><a href="mailto:connect@spikehatstudios.com" class="email-link"><strong>connect@spikehatstudios.com</strong></a></p>
+        <!-- Intro -->
+        <section class="intro">
+            <div class="wrap">
+                <p class="intro-copy">
+                    SpikeHat is a small crew of designers, animators, and engineers turning raw ideas into playable worlds and moving pictures. We work with founders, studios, and IP owners — quietly, then all at once.
+                </p>
+            </div>
+        </section>
+
+        <!-- Work / Folds -->
+        <section class="work" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="section-tag">SELECTED WORK</span>
+                    <h2 class="section-title">TWO DOORS <span class="italic">OPEN NOW.</span></h2>
+                </div>
+
+                <div class="folds">
+                    <a href="couch-clash.html" class="fold fold-a" id="couch-clash">
+                        <div class="fold-media" aria-hidden="true">
+                            <div class="fold-shape shape-a"></div>
                         </div>
-                        <div class="detail-item">
-                            <span class="detail-icon"><i class="fab fa-linkedin"></i></span>
-                            <p>Follow us:<br><a href="https://www.linkedin.com/company/spikehatstudios" target="_blank" class="social-link"><strong>LinkedIn</strong></a></p>
+                        <div class="fold-body">
+                            <span class="fold-badge">LOCAL MULTIPLAYER · GAME</span>
+                            <h3 class="fold-title">COUCH CLASH</h3>
+                            <p class="fold-tag">A local two-player party game where a 2D fight shares the screen with a 3D living-room rivalry.</p>
+                            <span class="fold-cta">PLAY <span class="arr">&rarr;</span></span>
                         </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">⏰</span>
-                            <p>Response Time:<br><strong>Within 24 hours</strong></p>
+                    </a>
+
+                    <a href="who-ordered-this.html" class="fold fold-b" id="who-ordered">
+                        <div class="fold-media" aria-hidden="true">
+                            <img src="Image/who ordered this Poster.jpg" alt="Who Ordered This? poster" class="fold-poster">
                         </div>
-                    </div>
+                        <div class="fold-body">
+                            <span class="fold-badge">CHAOS COOP · GAME</span>
+                            <h3 class="fold-title">WHO ORDERED THIS?</h3>
+                            <p class="fold-tag">Run a kitchen that shouldn't exist. Serve orders that never should have been placed.</p>
+                            <span class="fold-cta">PLAY <span class="arr">&rarr;</span></span>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Services -->
+        <section class="services" id="services">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="section-tag">CAPABILITIES</span>
+                    <h2 class="section-title">WHAT WE <span class="italic">MAKE.</span></h2>
+                </div>
+
+                <ul class="svc-list">
+                    <li class="svc">
+                        <span class="svc-num">01</span>
+                        <div>
+                            <h4>Game Design &amp; Development</h4>
+                            <p>Full-cycle production for PC, console, and mobile. Prototype in weeks, ship in months.</p>
+                        </div>
+                        <span class="svc-tags">UNITY · UNREAL · GODOT</span>
+                    </li>
+                    <li class="svc">
+                        <span class="svc-num">02</span>
+                        <div>
+                            <h4>Animation &amp; Motion</h4>
+                            <p>2D, 3D, and character animation. Trailers, cinematics, shorts, and pipeline work for other studios.</p>
+                        </div>
+                        <span class="svc-tags">BLENDER · AFTER EFFECTS · TOON BOOM</span>
+                    </li>
+                    <li class="svc">
+                        <span class="svc-num">03</span>
+                        <div>
+                            <h4>Visual Identity &amp; Branding</h4>
+                            <p>Names, marks, and systems for studios and their IP. Pitch decks that actually close.</p>
+                        </div>
+                        <span class="svc-tags">LOGOS · TYPE · GUIDELINES</span>
+                    </li>
+                    <li class="svc">
+                        <span class="svc-num">04</span>
+                        <div>
+                            <h4>Concept &amp; Illustration</h4>
+                            <p>Character sheets, environments, key art, and the ugly first drafts you actually need.</p>
+                        </div>
+                        <span class="svc-tags">CHARACTER · ENVIRONMENT · KEY ART</span>
+                    </li>
+                    <li class="svc">
+                        <span class="svc-num">05</span>
+                        <div>
+                            <h4>VFX &amp; Technical Art</h4>
+                            <p>Shaders, particles, and the small moments that separate a decent game from a memorable one.</p>
+                        </div>
+                        <span class="svc-tags">HOUDINI · NIAGARA · SHADER GRAPH</span>
+                    </li>
+                    <li class="svc">
+                        <span class="svc-num">06</span>
+                        <div>
+                            <h4>Contract &amp; Co-Development</h4>
+                            <p>Embed with your team for a sprint, a milestone, or a whole release cycle.</p>
+                        </div>
+                        <span class="svc-tags">RETAINER · MILESTONE · EMBED</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Brands / clients -->
+        <section class="brands">
+            <div class="wrap">
+                <span class="section-tag">TRUSTED BY</span>
+            </div>
+            <div class="brands-marquee" aria-label="Brands we have worked with">
+                <div class="brands-track">
+                    <img src="Image/Brands/image 25.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 26.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 29.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 30.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 31.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 32.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 33.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 35.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 36.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 54.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 55.png" alt="" class="brand-logo">
+                    <img src="Image/Brands/image 57.png" alt="" class="brand-logo">
+                    <!-- duplicate for seamless loop -->
+                    <img src="Image/Brands/image 25.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 26.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 29.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 30.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 31.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 32.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 33.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 35.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 36.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 54.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 55.png" alt="" class="brand-logo" aria-hidden="true">
+                    <img src="Image/Brands/image 57.png" alt="" class="brand-logo" aria-hidden="true">
+                </div>
+            </div>
+        </section>
+
+        <!-- Community / Contact -->
+        <section class="community" id="about">
+            <div class="wrap community-grid">
+                <div class="comm-card comm-primary">
+                    <span class="section-tag">START A PROJECT</span>
+                    <h3>Got a world that needs building?</h3>
+                    <p>Tell us the shape of it. We reply within one working day, usually the same afternoon.</p>
+                    <a href="mailto:manoj@spikehatstudios.com" class="btn-pill dark">manoj@spikehatstudios.com</a>
+                </div>
+                <div class="comm-card comm-secondary">
+                    <span class="section-tag">COMMUNITY</span>
+                    <h3>SpikeHat on LinkedIn</h3>
+                    <p>Where we post the work-in-progress the timeline doesn't get to see.</p>
+                    <a href="https://www.linkedin.com/company/spikehatstudios" target="_blank" rel="noopener" class="btn-ghost">FOLLOW US <span class="arr">&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="foot">
+        <div class="wrap foot-grid">
+            <div class="foot-brand">
+                <img src="Image/SpikeHat_logo.png" alt="SpikeHat Studios" class="foot-logo">
+                <p>SpikeHat Studios is a creative house building games, animation, and identities. We work with a small number of partners at any given time.</p>
+            </div>
+            <div>
+                <span class="foot-h">Games</span>
+                <ul>
+                    <li><a href="couch-clash.html">Couch Clash</a></li>
+                    <li><a href="who-ordered-this.html">Who Ordered This?</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="foot-h">Studio</span>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="foot-h">Legal</span>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap foot-bottom">
             <p>&copy; 2026 SpikeHat Studios. All rights reserved.</p>
+            <a href="#top" class="foot-top">BACK TO TOP <span class="arr">&uarr;</span></a>
         </div>
     </footer>
 
