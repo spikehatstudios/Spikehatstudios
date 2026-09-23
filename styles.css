@@ -129,6 +129,14 @@ ul{list-style:none}
     radial-gradient(900px 600px at 12% 82%,rgba(255,90,60,.14),transparent 60%),
     linear-gradient(180deg,#0a0a0b 0%,#111114 100%);
 }
+.hero-video{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;object-position:center;
+    z-index:-1;
+    opacity:.75;
+    pointer-events:none;
+}
 .hero-noise{
     position:absolute;inset:0;
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.4 0'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.35'/></svg>");
